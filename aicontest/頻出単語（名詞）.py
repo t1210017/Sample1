@@ -30,7 +30,7 @@ tagger= MeCab.Tagger()
 
 file_text = [] #テキストファイル名を格納するリスト型変数
 #muliti files
-for file in glob.glob('./input/*.txt'): #Pythonソースと同じディレクトリの「test」フォルダにあるテキストファイルが対象
+for file in glob.glob('./input/*.txt'): #Pythonソースと同じディレクトリの「input」フォルダにあるテキストファイルが対象
     #file_name.append(os.path.basename(file)) #ファイルパスからファイル名のみ抽出
     file_data = open(file,'r',encoding='utf-8-sig') 
     bindata = file_data.read()
